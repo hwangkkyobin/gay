@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open 500 Windows</title>
+  <script>
+    // 페이지 로드 시 실행
+    window.onload = function () {
+      const url = "https://example.com"; // 열고 싶은 URL
+      for (let i = 0; i < 500; i++) {
+        window.open(
+          url,
+          "_blank",
+          "width=800,height=600,left=" + (i * 10) + ",top=" + (i * 10)
+        );
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Opening 500 windows...</h1>
+  <p>If windows do not open automatically, your browser may be blocking pop-ups.</p>
+</body>
+</html>
